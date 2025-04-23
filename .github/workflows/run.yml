@@ -2,7 +2,7 @@ name: Run Python Adder
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   run:
