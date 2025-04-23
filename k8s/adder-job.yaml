@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: adder-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: adder
+        image: adder:latest  # this must match the local image name
+        imagePullPolicy: Never
+      restartPolicy: Never
